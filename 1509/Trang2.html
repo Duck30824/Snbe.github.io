@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc mừng sinh nhật</title>
+    <link rel="stylesheet" href="/css/style2.css" />
+    <link rel="icon" href="/img/Birthday_Cake_icon-icons.com_68779.ico" />
+  </head>
+  <body>
+    <script>
+      var index = 0;
+      changeImage = function () {
+        var imgs = [
+          "/img/KN1.JPG",
+          "/img/KN2.PNG",
+          "/img/KN3.JPG",
+          "/img/KN4.JPG",
+          "/img/KN5.JPG",
+          "/img/KN6.JPG",
+          "/img/KN7.JPG",
+          "/img/KN8.PNG",
+          "/img/KN9.PNG",
+          "/img/KN10.PNG",
+          "/img/KN11.PNG",
+          "/img/KN12.PNG",
+          "/img/KN13.PNG",
+          "/img/KN14.PNG",
+
+         
+        ];
+        document.getElementById("show").src = imgs[index];
+        index++;
+        if (index == 14) {
+          index = 0;
+        }
+      };
+      setInterval(changeImage, 2000);
+    </script>
+    <div id="Wrapper">
+      <header>
+        <div id="logo">
+          <img src="/img/HAPPY.png" alt="" />
+        </div>
+      </header>
+
+      <div id="title">
+        <p id="text-chuc-mung">
+          Này bé ơi ! <br>
+          Anh chào bé, Anh biết là tụi mình đã xích mích và chia tay rồi, nhưng anh vẫn muốn làm một chiếc wed nho nhỏ để xin lỗi em
+          , vì thời gian qua anh sai nhiều quá. Anh cũng không tốt với em, anh cũng dần thay đổi khiến em buồn. Anh xin lỗi em nhiều lắm, 15 ngày em xa anh
+          thật sự anh rất nhớ em, anh cứ khóc hoài khóc mãi thôi em ạ. Em về với anh nhé, dù gì cũng 2 năm mình bên nhau, buồn vui tủi hờn đều có
+          . Anh vẫn muốn thay đổi tích cực để cho em vui, cũng không muốn nhìn em khóc nữa. Em đừng yêu người khác nhé. Anh thương em lắm. <br>
+          <br>
+          Hôm nay là 15/09/2022 tức là đã tròn 2 năm kể từ khi mình thương nhau, Thời gian cũng dài thật. Nên anh chúc em sang năm mới để bên nhau, mình yêu nhau gắn bó
+          hơn, không còn những cãi vã xô bồ nữa. Cũng không còn sự im lặng từ anh nữa. Anh yêu bé, Anh chúc bé một ngày vui vẻ. 
+            <br>
+            Nếu bé đồng ý tha lỗi cho anh và tạo cho anh cơ hội thì mở block cho anh xin lỗi nhé ! YÊU EM
+        </p>
+        <div id="Kyten" align="right"><i>Lê Quang Long ( Gấu Péo )</i></div>
+      </div>
+
+      <div id="img">
+        <h2>Ở đây anh để một số ảnh kỉ niệm của hai đứa</h2>
+        <div id="anh-slide">
+          <img  src="/img/KN1.JPG" id="show" onclick="changeImage()"/>
+        </div>
+        <a href="index.html" onclick="Location" >Về trang 1 thôi nào bé</a>
+        <a href="https://www.facebook.com/Long.lequang308/" onclick="Location" >Đồng ý tha tội</a>
+        
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc mừng sinh nhật</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/img/Birthday_Cake_icon-icons.com_68779.ico" />
+  </head>
+  <body>
+    <script>
+      var index = 0;
+      changeImage = function () {
+        var imgs = [
+          "/img/Anh1.PNG",
+          "/img/Anh2.PNG",
+          "/img/Anh3.PNG",
+          "/img/Anh4.PNG",
+          "/img/Anh5.PNG",
+          "/img/Anh6.JPG",
+          "/img/Anh7.PNG",
+          "/img/Anh8.PNG",
+          "/img/Anh9.PNG",
+          "/img/Anh10.PNG",
+          "/img/Anh11.PNG",
+        ];
+        document.getElementById("show").src = imgs[index];
+        index++;
+        if (index == 11) {
+          index = 0;
+        }
+      };
+      setInterval(changeImage, 1500);
+    </script>
+    <div id="Wrapper">
+      <header>
+        <div id="logo">
+          <img src="/img/HAPPY.png" alt="" />
+        </div>
+      </header>
+
+      <div id="title">
+        <p id="text-chuc-mung">
+          Chào bé Trần Phan Như Ngọc của anh, hôm nay là sinh nhật tuổi 18 của
+          em. Anh là người yêu của em Lê Quang Long chúc em tuổi mới ngày càng
+          xinh đẹp hơn, giỏi giang hơn, và luôn cố gắng hết mình trong sự nghiệp
+          em nhé. Em cũng sắp đi Đức rồi, anh chúc em đậu B2 và mãi mãi bay xa
+          với ước mơ của mình em nhé.
+        </p>
+        <div id="Kyten" align="right"><i>Lê Quang Long ( Gấu Péo )</i></div>
+      </div>
+
+      <div id="img">
+        <h2>Ở đây anh để một số ảnh kỉ niệm của hai đứa</h2>
+        <div id="anh-slide">
+          <img src="/img/Anh1.PNG" id="show" onclick="changeImage()" />
+        </div>
+        <a href="Trang2.html" onclick="Location" >Sang trang 2 thôi nào bé</a>
+        
+      </div>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
